@@ -1,0 +1,23 @@
+
+
+
+<div>
+    <h1>Cars</h1>
+    <p>Parent Component</p>
+    <table class="table table-striped table-bordered">
+        
+           
+          <tr *ngFor="let car of car;trackBy:trackByFunction">
+              <td>{{car.carName}}</td>
+             
+             <td>
+                <input type="button" class="btn btn-info" value="Car Details" (click)="setName(car)"/>
+             </td>
+          </tr>
+    </table>
+   
+</div>
+ <app-carchild [car]="carName"></app-carchild>
+
+
+ 

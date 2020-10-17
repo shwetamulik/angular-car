@@ -1,0 +1,27 @@
+
+
+<div *ngIf="car"class="container">
+    <h2>Car Details</h2>
+    <h6>Child Component</h6>
+    <div class="row">
+        <table class="table  table-striped  table-bordered">
+            <thead class="table table-dark " >
+              <tr>
+                <th scope="col">Car ID</th>
+                <th scope="col">Car Name</th>
+                <th scope="col">Car Model</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr >
+                <td><h4>{{car.carId}}</h4></td>
+                <td><h4>{{car.carName}}</h4></td>
+                <td><h4>{{car.carModel}}</h4></td>
+                <td><h4>{{car.price}}</h4></td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
